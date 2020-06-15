@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter valuta</title>
+</head>
+<body>
+    
+    <h1>Konverter valuta</h1>
+
+    <form name="converter">
+
+        <fieldset>
+                <label>Dolari:  </label> 
+        <input type="number" name="dolari" required>
+        
+        <input type="button" value="Convert" onclick="currencyConverter(dolari.value)"><br><br>
+
+        <h2>Prodajni tecaj</h2>
+        <div>
+            <label>AUD(Australija): </label>
+            <input id="prodajni_aud"><br><br>
+    
+            <label>HUF(Madarska): </label>
+            <input id="prodajni_huf"><br><br>
+    
+            <label>CHF(Svicarska): </label>
+            <input id="prodajni_chf"><br><br>
+    
+            <label>BAM(Bosna i Hercegovina): </label>
+            <input id="prodajni_bam"><br><br>
+    
+            <label>GBP(Velika Britanija): </label>
+            <input id="prodajni_gbp"><br><br>
+        </div>
+
+        <h2>Srednji tecaj</h2>
+        <div>
+            <label>AUD(Australija): </label>
+            <input id="srednji_aud"><br><br>
+    
+            <label>HUF(Madarska): </label>
+            <input id="srednji_huf"><br><br>
+    
+            <label>CHF(Svicarska): </label>
+            <input id="srednji_chf"><br><br>
+    
+            <label>BAM(Bosna i Hercegovina): </label>
+            <input id="srednji_bam"><br><br>
+    
+            <label>GBP(Velika Britanija): </label>
+            <input id="srednji_gbp"><br><br>
+        </div>
+
+        <h2>Kupovni tecaj</h2>
+        <div>
+            <label>AUD(Australija): </label>
+            <input id="kupovni_aud"><br><br>
+    
+            <label>HUF(Madarska): </label>
+            <input id="kupovni_huf"><br><br>
+    
+            <label>CHF(Svicarska): </label>
+            <input id="kupovni_chf"><br><br>
+    
+            <label>BAM(Bosna i Hercegovina): </label>
+            <input id="kupovni_bam"><br><br>
+    
+            <label>GBP(Velika Britanija): </label>
+            <input id="kupovni_gbp"><br><br>
+        </div>
+        
+        <input type="reset" value="Reset Form">
+
+
+        </fieldset>
+        </form>
+
+    <ul id="valuta">
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
